@@ -9,7 +9,7 @@ const {PORT} = secrets
 const app = express();
 
 app.use(cors({
-    origin:'http://localhost:5173',
+    origin:'https://blog-app-frontend-lime.vercel.app/',
     credentials:true
 }))
 app.use(cookieParser())
