@@ -23,6 +23,9 @@ const postSchema = new Schema(
     isdelete:{
       type:Boolean,
       default:false
+    },
+    date:{
+      
     }
   },
   {
