@@ -28,7 +28,7 @@ export const createPost = async (req, res, next) => {
       thumbnail: thumbnailUrl,
       content: JSON.stringify(parsedData),
     });
-    res.status(201).json({success:true,message:"blog created"})
+    res.status(201).json({success:true,message:"blog created", post: blog,})
   } catch (error) {
     console.error(error);
     throw error;
@@ -99,7 +99,7 @@ export const editPost = async(req,res,next)=>{
       thumbnail: thumbnailUrl || thumbnail,
       content: JSON.stringify(parsedData),
     });
-    res.status(201).json({success:true,message:"blog updated"})
+    res.status(201).json({success:true,message:"blog updated", post: blog,})
   } catch (error) {
     console.error(error);
     throw error;

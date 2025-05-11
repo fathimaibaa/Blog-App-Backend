@@ -24,9 +24,6 @@ const postSchema = new Schema(
       type:Boolean,
       default:false
     },
-    date:{
-      
-    }
   },
   {
     timestamps: true,
